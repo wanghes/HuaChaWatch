@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ post.title | escape }}</title>
+</head>
+<body>
+	<h1>{{ post.title | escape }}</h1>
+	<p >日期：{{ post.date | escape }}</p>
+	<hr>
+	<div class="post-content">{% autoescape %}{{ post.content }}{% endautoescape %}</div>
+</body>
+</html>
